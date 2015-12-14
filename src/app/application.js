@@ -12,7 +12,7 @@ app.use(logging.generatorFunc);
 require('../routes')(app);
 
 //404
-app.use(function *pageNotFound(next) {
+app.use(function*(next) {
     this.response.body = yield render('404');
 });
 
