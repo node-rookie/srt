@@ -8,7 +8,7 @@ module.exports = function(){
         cookie: {
             maxAge: 60000*60
         },
-        store: redisStore(),
+        store: redisStore({pass: 'heangui'}),
         reconnectTimeout: 100
     });
 }
